@@ -95,23 +95,39 @@
 // console.log("Второе число:", second);
 // console.log("Остальные числа:", rest);
 
-const nums1 = [10, 20, 30, 40, 50];
-const nums2 = [60, 70, 80, 90, 100];
-const nums = [...nums1, ...nums2];
-console.log(nums);
-function findMax(...numbers) {
-    return numbers.reduce((max, num) => {
-        return num > max ? num : max;
-    }, numbers[0])
-}
-console.log(findMax(10, 20, 30, 40, 50));
-const product = {
-    name: "Милка",
-    price: 124,
-};
-const productInfo = {
-    category: "Сладости",
-    inStock: true,
-};
-const combined = { ...product, ...productInfo };
-console.log(combined);
+// const nums1 = [10, 20, 30, 40, 50];
+// const nums2 = [60, 70, 80, 90, 100];
+// const nums = [...nums1, ...nums2];
+// console.log(nums);
+// function findMax(...numbers) {
+//     return numbers.reduce((max, num) => {
+//         return num > max ? num : max;
+//     }, numbers[0])
+// }
+// console.log(findMax(10, 20, 30, 40, 50));
+// const product = {
+//     name: "Милка",
+//     price: 124,
+// };
+// const productInfo = {
+//     category: "Сладости",
+//     inStock: true,
+// };
+// const combined = { ...product, ...productInfo };
+// console.log(combined);
+
+// import { greet, add, PI } from "./utils.js";
+// console.log("Модули");
+// console.log(greet("Адексей"));
+// console.log("5 + 3 =", add(5, 3));
+// console.log("значение PI:", PI);
+// import { multiply as умножить } from "./utils.js";
+// console.log("4 * 7 =", умножить(4, 7));
+// import * as Utils from "./utils.js";
+// console.log(Utils.greet("Мария"));
+// console.log("Умножение:", Utils.multiply(3, 9));
+
+import { square, cube, E } from "./math.js";
+console.log(square(2));
+console.log(cube(2));
+console.log(E);
